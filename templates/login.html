@@ -24,35 +24,14 @@
         <form id="login" name="login" action="/idp/profile/SAML2/POST/SSO?execution=e1s1" method="post">
           <input type="hidden" name="performauthentication" value="true">
           <div class="inputContainer">
-            <br>
-            <!--<center>
-              <h3> Google OAuth 2.0 </h3>
-            </center> -->
+                <br>
             <center>
               <a role="button" id="globus-signin" href='{{authenticator_login_url}}'>
-                <img width="200px" height="52px"
-                  src="https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png"
-                  onmouseover="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_focus_web%402x.png'"
-                  onmouseout="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png'"
-                  onmousedown="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_pressed_web%402x.png'"
-                  border="0" alt="Google"/>
-              </a>
-              <form action='{{authenticator_login_url}}'>
-      <input type="submit" value="Login" id="login-form-submit" >
-      </form>
-            </center>
-            <center>
-              <a role="button" id="google-signin2" href='{{authenticator_login_url}}'>
                 <img width="335px" height="52px"
-                  src="http://www.maths.gla.ac.uk/~ctorney/files/assets/signinwgithub.svg"
+                  src="https://raw.githubusercontent.com/ctorney/k8s-jhub/master/static/images/signin.svg"
                   border="0" alt="Github"/>
               </a>
             </center>
-            <div id="helpContainer">
-
-                <br>
-                How does it work? <a href="https://zero-to-jupyterhub.readthedocs.io/en/latest/" target="_blank">About JupyterHub with Kubernetes</a></p>
-            </div>
           </div>
         </form>
       </div>
@@ -62,6 +41,11 @@ By using this system you agree to the following terms of service: (1) you repres
 Certain activities are monitored in the course of normal system operations and maintenance.
 To learn more about University regulations and our code of conduct click <a href="https://www.gla.ac.uk/myglasgow/it/policy/codeofconduct/">here</a>.</p>    
       
+            </div>
+            <div id="helpContainer">
+
+                <br>
+                How does it work? <a href="https://zero-to-jupyterhub.readthedocs.io/en/latest/" target="_blank">About JupyterHub with Kubernetes</a></p>
             </div>
     </div>
   </div>
@@ -162,17 +146,6 @@ a:hover {
         cursor: pointer;
          }
 
-    #login-form-submit {
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  background-color: #3a3a3a;
-  cursor: pointer;
-  outline: none;
-}
 
 @media screen and (min-width:600px) {
 	.contentLeft,
