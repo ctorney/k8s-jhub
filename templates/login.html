@@ -29,6 +29,19 @@
               <h3> Google OAuth 2.0 </h3>
             </center> -->
             <center>
+              <a role="button" id="globus-signin" href='{{authenticator_login_url}}'>
+                <img width="200px" height="52px"
+                  src="https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png"
+                  onmouseover="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_focus_web%402x.png'"
+                  onmouseout="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png'"
+                  onmousedown="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_pressed_web%402x.png'"
+                  border="0" alt="Google"/>
+              </a>
+              <form action='{{authenticator_login_url}}'>
+      <input type="submit" value="Login" id="login-form-submit" >
+      </form>
+            </center>
+            <center>
               <a role="button" id="google-signin2" href='{{authenticator_login_url}}'>
                 <img width="335px" height="52px"
                   src="http://www.maths.gla.ac.uk/~ctorney/files/assets/signinwgithub.svg"
@@ -139,7 +152,27 @@ a:hover {
 	}
 }
 
+    button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
 
+    #login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
 
 @media screen and (min-width:600px) {
 	.contentLeft,
