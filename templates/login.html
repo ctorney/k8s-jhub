@@ -26,11 +26,7 @@
           <div class="inputContainer">
                 <br>
             <center>
-              <a role="button" id="globus-signin" href='{{authenticator_login_url}}'>
-                <img width="280px" height="52px"
-                  src="https://raw.githubusercontent.com/ctorney/k8s-jhub/master/static/images/signin.png"
-                  border="0" alt="Github"/>
-              </a>
+              <a role="button" id="globus-signin" href='{{authenticator_login_url}}' style="text-decoration: none;"  class="button" >Sign in</a>
             </center>
           </div>
         </form>
@@ -79,14 +75,24 @@ a,
 a:active,
 a:focus,
 a:visited {
-	color: #0000EE;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #007bff;
 	text-decoration: underline;
 }
+
+.button {
+  font: normal 20px Arial;
+  text-decoration: none;
+  background-color: #003865;
+  color: #ffffff;
+  padding: 6px 30px 6px 30px;
+  border-radius: 5px;
+}
+
+
+
 
 .container {
 	background-color: transparent;
@@ -107,7 +113,7 @@ a:hover {
 	max-width: 600px;
 	min-width: 320px;
 	height: 150px;
-}
+	}
 
 .loginTableRow {
 	display: table;
